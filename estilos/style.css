@@ -36,3 +36,13 @@ section#telefone { /*section com ID telefone */
     
     /* Por padrão, as imagens se repetem pra preencher o espaço, então coloco no repeat para deixar somente 1.*/
 }
+
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+
+    width: 269px;
+    height: 471px;
+
+}
