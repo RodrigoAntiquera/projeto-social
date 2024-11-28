@@ -44,5 +44,22 @@ iframe#tela {
 
     width: 269px;
     height: 471px;
+}
 
+section#redes-sociais {
+    text-align: right; /* alinhei as imagens na direita*/
+}
+section#redes-sociais img {
+    width: 50px; /* aqui eu diminui a imagem pra criar o icone*/
+    margin: 10px; /*separei as imagens */
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+    box-sizing: border-box; /*deixo a borda do mesmo tamanho do objeto, fazendo que o hover não altere a imagem debaixo por conta do tamanho */
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgb(255, 255, 255, 0.6);
+    transform:translate(-3px, -3px); /*  usada para mover elementos na tela sem alterar sua posição no fluxo normal do documento. mexo imagem pra cima e pra esquerda com os numeros negativos.*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
+    transition: transform .5s, border 1s; /* demora 0.5s pra mover a imagem, criando um efeito de transição suave, tornando o transform:translate mais elegante. O border 1s faz que a borda demore 1s pra aparecer, também gerando uma transição suave.*/
 }
