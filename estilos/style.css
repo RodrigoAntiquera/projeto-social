@@ -1,0 +1,33 @@
+@charset "UTF-O"
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vh;
+    background-color: black;
+}
+
+main {
+    position: relative; /* Quando você define position: relative em um elemento, ele serve como o referencial para qualquer elemento filho com position: absolute. Ou seja, os filhos serão posicionados em relação ao contêiner com position: relative. */
+    height: 100vh;
+    background-color: green;
+}
+
+section#telefone {
+    position: absolute; /*deixo ele fixo em relação a algum container ou ao html ou body caso não tenha container.*/
+    top: 50%; /* movimentar o top */
+    left: 50%; /* movimentar o  left. aqui esta com a ponta superior esquerda no centro */
+    transform: translate(-50%, -50%); /* aqui eu deixo o centro do elemento no centro da tela, para ficar 100% centralizado.*/
+    
+    
+    height: 500px;
+    width: 311px;
+    background:blue url(../imagens/frame-iphone.png) no-repeat; /* ../ signifca volte uma pasta e abra, pois nos arquivos da pasta imagens esta dentro da pagina projeto social */
+    
+    /* Por padrão, as imagens se repetem pra preencher o espaço, então coloco no repeat para deixar somente 1.*/
+}
